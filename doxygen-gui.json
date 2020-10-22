@@ -39,11 +39,5 @@
                 ]
             }
         }
-    },
-
-    "bin": [
-        "doxygen.exe",
-        "doxyindexer.exe",
-        "doxysearch.cgi.exe"
-    ],
+    }
 }
