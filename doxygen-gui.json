@@ -47,6 +47,14 @@
         "bin\\doxysearch.cgi.exe",
         "bin\\doxywizard.exe"
     ],
+
+    "shortcuts": [
+        [
+            "bin\\doxywizard.exe",
+            "Doxywizard"
+        ]
+    ],
+
     "checkver": {
         "url": "http://www.doxygen.nl/download.html",
         "re": "The latest version of doxygen is ([\\d.]+)"
