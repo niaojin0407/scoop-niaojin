@@ -39,5 +39,21 @@
                 ]
             }
         }
+    },
+
+    "bin": [
+        "bin\\doxygen.exe",
+        "bin\\doxyindexer.exe",
+        "bin\\doxysearch.cgi.exe",
+        "bin\\doxywizard.exe"
+    ],
+    "checkver": {
+        "url": "http://www.doxygen.nl/download.html",
+        "re": "The latest version of doxygen is ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "http://doxygen.nl/files/doxygen-$version-setup.exe"
+        }
     }
 }
