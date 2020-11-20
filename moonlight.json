@@ -27,7 +27,7 @@
     ],
 
     "checkver": {
-        "github": "https://github.com/moonlight-stream/moonlight-qt/releases/"
+        "github": "https://github.com/moonlight-stream/moonlight-qt"
     },
     "autoupdate": {
         "architecture": {

@@ -21,7 +21,7 @@
     "##": "バージョンチェックと自動アップデート",
     "checkver": {
         "url": "https://joytokey.net/",
-        "re": "JoyToKey ([\\d.]+) リリース"
+        "re": "JoyToKey ([\\d.]+) "
     },
     "autoupdate": {
         "url": "https://joytokey.net/download/JoyToKey.zip"
