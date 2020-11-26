@@ -36,7 +36,7 @@
             },
             "64bit": {
                 "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v$version/MoonlightPortable-x64-$version.zip"
-            }
+            },
         }
     }
 }
