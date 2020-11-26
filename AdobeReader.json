@@ -35,5 +35,5 @@
     "checkver": "Version\\s+\\d{2}([\\d.]+)",
     "autoupdate": {
         "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/$cleanVersion/AcroRdrDC$cleanVersion_ja_JP.exe#/cosi.7z"
-    },
+    }
 }
