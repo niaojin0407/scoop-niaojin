@@ -19,6 +19,7 @@
             "Expand-MsiArchive \"$dir\\AcroRead.msi\" -DestinationPath \"$dir\\cosi\"",
             "Get-ChildItem $dir -Exclude 'cosi' | Remove-Item -Force -Recurse",
             "Move-Item \"$dir\\cosi\\program files\\Adobe\\Acrobat Reader DC\\*\" $dir -Force",
+            "New-Item -ItemType Directory -Force -Path \"${env:CommonProgramFiles}\\Adobe\"",
             "Move-Item \"$dir\\cosi\\Common\\*\" $env:CommonProgramFiles -Force",
             "#Remove-Item \"$dir\\cosi\" -Force -Recurse"
         ]
