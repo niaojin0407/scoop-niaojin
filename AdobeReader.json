@@ -14,13 +14,15 @@
     },
     "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2001320064/AcroRdrDC2001320064_ja_JP.exe#/cosi.7z",
     "hash": "a2589d902cadb43f2026891ed83297c9644d52aff1efdd4dfea6eb0297b79255",
+    "depends": [
+        "sudo"
+    ],
     "installer": {
         "script": [
             "Expand-MsiArchive \"$dir\\AcroRead.msi\" -DestinationPath \"$dir\\cosi\"",
             "Get-ChildItem $dir -Exclude 'cosi' | Remove-Item -Force -Recurse",
             "Move-Item \"$dir\\cosi\\program files\\Adobe\\Acrobat Reader DC\\*\" $dir -Force",
-            "New-Item -ItemType Directory -Force -Path \"${env:CommonProgramFiles}\\Adobe\"",
-            "Move-Item \"$dir\\cosi\\Common\\*\" $env:CommonProgramFiles -Force",
+            "sudo Move-Item \"$dir\\cosi\\Common\\*\" $env:CommonProgramFiles -Force",
             "#Remove-Item \"$dir\\cosi\" -Force -Recurse"
         ]
     },
