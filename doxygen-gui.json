@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "homepage": "http://www.doxygen.nl/",
     "description": "Documentation generator from annotated source code.",
@@ -69,76 +68,4 @@
             "url": "http://doxygen.nl/files/doxygen-$version-setup.exe"
         }
     }
-=======
-{
-    "homepage": "http://www.doxygen.nl/",
-    "description": "Documentation generator from annotated source code.",
-    "license": "GPL-2.0-only",
-    "version": "1.8.20",
-    "url": "http://doxygen.nl/files/doxygen-1.8.20-setup.exe",
-    "hash": "30f19774d7cbceddfb678bb411b969b4f3d370ecc5c56f268e40e6b3049c07a7",
-
-    "depends": [
-        "sudo"
-    ],
-
-    "depends": [
-        "innounp"
-    ],
-
-    "architecture": {
-        "32bit": {
-            "installer": {
-                "script": [
-                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-1.8.20-setup.exe\"",
-                    "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
-                    "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-1.8.20-setup.exe\" -Recurse -Force",
-                    "Get-ChildItem \"$dir\\bin\" -Filter \"*,2.*\" | Rename-Item -NewName { $_.Name -replace ',2', '' }",
-                    "Remove-Item \"$dir\\bin\\*,1.*\" -Recurse -Force"
-                ]
-            }
-        },
-        "64bit": {
-            "installer": {
-                "script": [
-                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-1.8.20-setup.exe\"",
-                    "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
-                    "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-1.8.20-setup.exe\" -Recurse -Force",
-                    "Get-ChildItem \"$dir\\bin\" -Filter \"*,1.*\" | Rename-Item -NewName { $_.Name -replace ',1', '' }",
-                    "Remove-Item \"$dir\\bin\\*,2.*\" -Recurse -Force"
-                ]
-            }
-        }
-    },
-
-    "bin": [
-        "bin\\doxygen.exe",
-        "bin\\doxyindexer.exe",
-        "bin\\doxysearch.cgi.exe",
-        "bin\\doxywizard.exe"
-    ],
-
-    "shortcuts": [
-        [
-            "bin\\doxywizard.exe",
-            "Doxywizard"
-        ]
-    ],
-
-    "checkver": {
-        "url": "http://www.doxygen.nl/download.html",
-        "re": "The latest version of doxygen is ([\\d.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "url": "http://doxygen.nl/files/doxygen-$version-setup.exe"
-        }
-    }
->>>>>>> 6ad468d766629f96771864d93d0ff755f6636bbb
 }
