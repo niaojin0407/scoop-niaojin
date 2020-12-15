@@ -12,8 +12,8 @@
             "extras/vcredist2013"
         ]
     },
-    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2001320064/AcroRdrDC2001320064_ja_JP.exe#/cosi.7z",
-    "hash": "a2589d902cadb43f2026891ed83297c9644d52aff1efdd4dfea6eb0297b79255",
+    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2001320074/AcroRdrDC2001320074_ja_JP.exe#/cosi.7z",
+    "hash": "049bdb834c114da98242847bc308a9a187b15f124a0bda98869f634ef8a5857c",
     "depends": "sudo",
     "installer": {
         "script": [
