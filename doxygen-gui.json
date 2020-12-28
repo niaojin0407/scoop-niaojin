@@ -10,12 +10,13 @@
         "32bit": {
             "installer": {
                 "script": [
-                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-1.8.20-setup.exe\"",
+                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-$version-setup.exe\"",
                     "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
                     "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
+                    "Move-Item \"$dir\\doxygen-gui\\{app}\\bin\" \"$dir\"",
                     "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
                     "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-1.8.20-setup.exe\" -Recurse -Force",
+                    "Remove-Item \"$dir\\doxygen-$version-setup.exe\" -Recurse -Force",
                     "Get-ChildItem \"$dir\\bin\" -Filter \"*,2.*\" | Rename-Item -NewName { $_.Name -replace ',2', '' }",
                     "Remove-Item \"$dir\\bin\\*,1.*\" -Recurse -Force"
                 ]
@@ -24,12 +25,13 @@
         "64bit": {
             "installer": {
                 "script": [
-                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-1.8.20-setup.exe\"",
+                    "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-$version-setup.exe\"",
                     "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
                     "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
+                    "Move-Item \"$dir\\doxygen-gui\\{app}\\bin\" \"$dir\"",
                     "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
                     "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-1.8.20-setup.exe\" -Recurse -Force",
+                    "Remove-Item \"$dir\\doxygen-$version-setup.exe\" -Recurse -Force",
                     "Get-ChildItem \"$dir\\bin\" -Filter \"*,1.*\" | Rename-Item -NewName { $_.Name -replace ',1', '' }",
                     "Remove-Item \"$dir\\bin\\*,2.*\" -Recurse -Force"
                 ]
