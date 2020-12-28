@@ -2,18 +2,10 @@
     "homepage": "http://www.doxygen.nl/",
     "description": "Documentation generator from annotated source code.",
     "license": "GPL-2.0-only",
-    "version": "1.8.20",
-    "url": "http://doxygen.nl/files/doxygen-1.8.20-setup.exe",
-    "hash": "30f19774d7cbceddfb678bb411b969b4f3d370ecc5c56f268e40e6b3049c07a7",
-
-    "depends": [
-        "sudo"
-    ],
-
-    "depends": [
-        "innounp"
-    ],
-
+    "version": "1.9.0",
+    "url": "http://doxygen.nl/files/doxygen-1.9.0-setup.exe",
+    "hash": "20398593540a9950e5e82f065e13e717c8d462c14be0586728e4884e461998ef",
+    "depends": "innounp",
     "architecture": {
         "32bit": {
             "installer": {
@@ -44,28 +36,23 @@
             }
         }
     },
-
     "bin": [
         "bin\\doxygen.exe",
         "bin\\doxyindexer.exe",
         "bin\\doxysearch.cgi.exe",
         "bin\\doxywizard.exe"
     ],
-
     "shortcuts": [
         [
             "bin\\doxywizard.exe",
             "Doxywizard"
         ]
     ],
-
     "checkver": {
         "url": "http://www.doxygen.nl/download.html",
         "re": "The latest version of doxygen is ([\\d.]+)"
     },
     "autoupdate": {
-        "architecture": {
-            "url": "http://doxygen.nl/files/doxygen-$version-setup.exe"
-        }
+        "url": "http://doxygen.nl/files/doxygen-$version-setup.exe"
     }
 }
