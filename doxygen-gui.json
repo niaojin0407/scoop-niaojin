@@ -11,10 +11,8 @@
             "installer": {
                 "script": [
                     "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-$version-setup.exe\"",
-                    "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\bin\" \"$dir\"",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
+                    "Move-Item \"$dir\\doxygen-gui\\{app}\" \"$dir\\doxygen-gui\\app\" -Force",
+                    "Move-Item \"$dir\\doxygen-gui\\app\\*\" \"$dir\" -Force",
                     "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
                     "Remove-Item \"$dir\\doxygen-$version-setup.exe\" -Recurse -Force",
                     "Get-ChildItem \"$dir\\bin\" -Filter \"*,2.*\" | Rename-Item -NewName { $_.Name -replace ',2', '' }",
@@ -26,10 +24,8 @@
             "installer": {
                 "script": [
                     "innounp -x \"-d$dir\\doxygen-gui\" \"$dir\\doxygen-$version-setup.exe\"",
-                    "Remove-Item \"$dir\\doxygen-gui\\{tmp}\" -Recurse -Force",
-                    "Remove-Item \"$dir\\doxygen-gui\\*.iss\" -Recurse -Force",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\bin\" \"$dir\"",
-                    "Move-Item \"$dir\\doxygen-gui\\{app}\\*\" \"$dir\"",
+                    "Move-Item \"$dir\\doxygen-gui\\{app}\" \"$dir\\doxygen-gui\\app\" -Force",
+                    "Move-Item \"$dir\\doxygen-gui\\app\\*\" \"$dir\" -Force",
                     "Remove-Item \"$dir\\doxygen-gui\" -Recurse -Force",
                     "Remove-Item \"$dir\\doxygen-$version-setup.exe\" -Recurse -Force",
                     "Get-ChildItem \"$dir\\bin\" -Filter \"*,1.*\" | Rename-Item -NewName { $_.Name -replace ',1', '' }",
