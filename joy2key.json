@@ -1,15 +1,9 @@
 {
-    "version": "6.5",
+    "version": "6.6",
     "url": "https://joytokey.net/download/JoyToKey.zip",
-    "##": "hash取得書式",
-    "##": "certutil -hashfile <対象ファイルPATH> SHA256",
-    "hash": "e3b07db6f997f27e94a14d76af29db252bae6202b4f7817c80ce1a8dcf519c6e",
-
-    "depends": [
-        "sudo"
-    ],
-
-    "##": "スタートメニューへ登録",
+    "##": "バージョンチェックと自動アップデート",
+    "hash": "a1941de88a5aa5bbe81b47f01f1a023f61285ffbbea0af5c8ab666104460d73c",
+    "depends": "sudo",
     "bin": "JoyToKey.exe",
     "shortcuts": [
         [
@@ -17,8 +11,6 @@
             "JoyToKey"
         ]
     ],
-
-    "##": "バージョンチェックと自動アップデート",
     "checkver": {
         "url": "https://joytokey.net/",
         "re": "JoyToKey ([\\d.]+) "
