@@ -1,0 +1,34 @@
+{
+    "homepage": "https://www.sdcard.org/ja/",
+    "description": "SDA Software means the object code version of the SD Memory Card Formatter.",
+    "version": "5.0.1",
+    "url": "https://www.sdcard.org/downloads/formatter/eula_windows/SDCardFormatterv5_WinEN.zip",
+    "hash": "4a3e7018af14681100c17d0e71464113a2f4dd4bc6eaa45b8aeed4ce6c67bfba",
+    "installer": {
+        script: [
+            "Remove-Item \"$dir\\*\" -Recurse -Force",
+            "7z.exe e \"$cachedir\\sd_formatter*.zip\" -o\"$dir\"",
+            "$Obj=Start-Process -FilePath \"$dir\\SD Card Formatter 5.0.1 Setup.exe\" -ArgumentList '/a /s /v/qb /vTARGETDIR=\"C:\\SDCardFormatter_\"' -PassThru",
+            "Wait-Process -InputObject $Obj",
+            "Move-Item \"C:\\SDCardFormatter_\\*\" \"$dir\" -Force"
+        ]
+    },
+    "bin": [
+        "program files\\SDA\\SD Card Formatter\\format_sd.exe",
+        "program files\\SDA\\SD Card Formatter\\SD Card Formatter.exe"
+    ],
+    "shortcuts": [
+        [
+            "program files\\SDA\\SD Card Formatter\\SD Card Formatter.exe",
+            "SD Card Formatter"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.sdcard.org/downloads/formatter/",
+        "re": "SD Memory Card Formatter (?<ver> [\\d.]+).(?<rev> [\\d.]+.[\\d.]+) for SD/SDHC/SDXC",
+        "replace": "${ver}.${rev}"
+    },
+    "autoupdate": {
+        "url": "https://www.sdcard.org/downloads/formatter/eula_windows/SDCardFormatterv$matchVer_WinEN.zip"
+    }
+}
