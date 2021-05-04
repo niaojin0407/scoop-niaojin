@@ -10,7 +10,8 @@
             "7z.exe e \"$cachedir\\sd_formatter*.zip\" -o\"$dir\"",
             "$Obj=Start-Process -FilePath \"$dir\\SD Card Formatter 5.0.1 Setup.exe\" -ArgumentList '/a /s /v/qb /vTARGETDIR=\"C:\\SDCardFormatter_\"' -PassThru",
             "Wait-Process -InputObject $Obj",
-            "Move-Item \"C:\\SDCardFormatter_\\*\" \"$dir\" -Force"
+            "Move-Item \"C:\\SDCardFormatter_\\*\" \"$dir\" -Force",
+            "Remove-Item \"C:\\SDCardFormatter_\" -Recurse -Force"
         ]
     },
     "bin": [
