@@ -17,7 +17,7 @@
     },
     "checkver": {
         "url": "http://dmpsoft.s17.xrea.com/hoot/",
-        "re": "//dmpsoft.s17.xrea.com/data/mxdrv([\\d.]+).7z"
+        "re": "/data/mxdrv([\\d.]+).7z"
     },
     "autoupdate": {
         "url": "http://dmpsoft.s17.xrea.com/data/mxdrv$version.7z"
