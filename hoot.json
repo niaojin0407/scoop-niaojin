@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "http://dmpsoft.s17.xrea.com/hoot/",
-        "re": "//dmpsoft.s17.xrea.com/data/hoot([\\d.]+).7z"
+        "re": "/data/hoot([\\d.]+).7z"
     },
     "autoupdate": {
         "url": "http://dmpsoft.s17.xrea.com/data/hoot$version.7z"
