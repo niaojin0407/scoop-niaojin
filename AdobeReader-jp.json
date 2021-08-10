@@ -1,5 +1,5 @@
 {
-    "version": "21.005.20048",
+    "version": "21.005.20058",
     "description": "Adobe Reader. Global standard for reliably viewing, printing, and commenting on PDF documents.",
     "homepage": "https://get.adobe.com/reader/",
     "license": {
@@ -12,8 +12,8 @@
             "extras/vcredist2013"
         ]
     },
-    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2100520048/AcroRdrDC2100520048_ja_JP.exe#/cosi.7z",
-    "hash": "3f9ea69a8a6642e790d930c4c6c57f770b92cfefaf1fa80dc0f68a4ae442902c",
+    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2100520058/AcroRdrDC2100520058_ja_JP.exe#/cosi.7z",
+    "hash": "50fbc32de836bc73c09eda7bdeb6261f876d4ef838b293e0730bdc1f0f8b44c5",
     "depends": "sudo",
     "installer": {
         "script": [
