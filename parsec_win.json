@@ -2,8 +2,7 @@
     "homepage": "https://parsec.app",
     "description": "Low-latency remote desktop (no hosting)",
     "license": "Freeware",
-    
-    "version": "150-76",
+    "version": "150-83c",
     "architecture": {
         "32bit": {
             "url": "https://builds.parsecgaming.com/package/parsec-flat-windows32.zip",
@@ -22,11 +21,12 @@
         ]
     ],
     "persist": [
-        "appdata.json"
+        "user.bin",
+        "config.txt"
     ],
     "checkver": {
-        "url": "https://wingetgui.com/apps?id=Parsec.Parsec",
-        "re": "Parsec.Parsec, Release version: (?<ver>[\\d]+)-(?<rev>[\\d]+)",
+        "url": "https://parsec.app/changelog",
+        "re": "<article id=\"(?<ver>[\\d]+)-(?<rev>[\\d/a-z]+)",
         "replace": "${ver}-${rev}"
     },
     "autoupdate": {
