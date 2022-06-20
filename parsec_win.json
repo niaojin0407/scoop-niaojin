@@ -2,7 +2,7 @@
     "homepage": "https://parsec.app",
     "description": "Low-latency remote desktop (no hosting)",
     "license": "Freeware",
-    "version": "150-83c",
+    "version": "150-83e",
     "architecture": {
         "32bit": {
             "url": "https://builds.parsecgaming.com/package/parsec-flat-windows32.zip",
