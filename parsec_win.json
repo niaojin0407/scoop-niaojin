@@ -2,15 +2,15 @@
     "homepage": "https://parsec.app",
     "description": "Low-latency remote desktop (no hosting)",
     "license": "Freeware",
-    "version": "150-84c",
+    "version": "150-85e",
     "architecture": {
         "32bit": {
             "url": "https://builds.parsecgaming.com/package/parsec-flat-windows32.zip",
-            "hash": "f2e6bbf65581d42bf35035e90ca01fbcc7c238014b9e16f026864f5ed9a4d0ef"
+            "hash": "7c41c0e875140972caa86ed0a75e47d0276ed8b2670eae10df86e44f0d040e9d"
         },
         "64bit": {
             "url": "https://builds.parsecgaming.com/package/parsec-flat-windows.zip",
-            "hash": "c378238e0a3edafc98d8556fd7fd0accb7095a809455914d733f65f8e4fe7831"
+            "hash": "0e34d4151a42d3189ed4b3e4c07a255c8d5244f3834487579a12726ebbd10d6f"
         }
     },
     "bin": "parsecd.exe",
