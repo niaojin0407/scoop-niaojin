@@ -1,9 +1,9 @@
 {
-    "version": "20220227",
+    "version": "20230109",
     "homepage": "http://dmpsoft.s17.xrea.com/hoot/",
     "description": "Sound Hardware Emulator.",
-    "url": "http://dmpsoft.s17.xrea.com/data/hoot20220227.7z",
-    "hash": "9398012d3c26a35e717039c21703581386876657343c72db805d65fdea78e1e3",
+    "url": "http://dmpsoft.s17.xrea.com/data/hoot20230109.7z",
+    "hash": "a5929cce27f07c6b58737669253a2aec5ad1e90a89a00190eee987d459f03fb5",
     "shortcuts": [
         [
             "hoot.exe",
