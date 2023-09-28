@@ -1,14 +1,14 @@
 {
     "homepage": "https://moonlight-stream.org",
-    "version": "4.2.1",
+    "version": "4.3.1",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v4.2.1/MoonlightPortable-x86-4.2.1.zip",
-            "hash": "d409a17232ef06c7f316d7f21a0a2021c4dfc710ff911756b81e57cbc0dfcf72"
+            "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v4.3.1/MoonlightPortable-x86-4.3.1.zip",
+            "hash": "9b016e45204ddca87f68521011047bb4d31887a3904a0a6184a794e8aa434472"
         },
         "64bit": {
-            "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v4.2.1/MoonlightPortable-x64-4.2.1.zip",
-            "hash": "ebabf1c2303383831a6853a34a42b5529b218952be731f838170983ad2322d72"
+            "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v4.3.1/MoonlightPortable-x64-4.3.1.zip",
+            "hash": "c357b146e4fd4d969844e9d65275dcd030d1bf7ba58d98a652946592c95d36df"
         }
     },
     "depends": "sudo",
