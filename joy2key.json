@@ -1,8 +1,8 @@
 {
-    "version": "6.9.2",
+    "version": "6.9.3",
     "url": "https://joytokey.net/download/JoyToKey.zip",
     "##": "バージョンチェックと自動アップデート",
-    "hash": "173c97229f8ca72d0d50b91eff9098784445aa147cad784409701adba460dd38",
+    "hash": "d910bcfa1317c220c51484c3dfae5b9f83792b2b7f1683d537adc175890bd9ad",
     "depends": "sudo",
     "bin": "JoyToKey.exe",
     "shortcuts": [
