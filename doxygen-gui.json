@@ -2,9 +2,9 @@
     "homepage": "http://www.doxygen.nl/",
     "description": "Documentation generator from annotated source code.",
     "license": "GPL-2.0-only",
-    "version": "1.10.0",
+    "version": "1.11.0",
     "url": "http://doxygen.nl/files/doxygen-1.10.0-setup.exe",
-    "hash": "9ab44b1232b86375c71c66a4923c2e90caf9054b13d0f257630106412ac3f9cb",
+    "hash": "",
     "depends": "innounp",
     "architecture": {
         "32bit": {
