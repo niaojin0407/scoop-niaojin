@@ -4,7 +4,7 @@
     "description": "Low-latency remote desktop (no hosting)",
     "license": "Freeware",
     "url": "https://builds.parsecgaming.com/package/parsec-flat-windows.zip",
-    "hash": "5b459966b74702765e4b572cde34996c92e1e0ec33021d4e2571b8b5e4a3314a"
+    "hash": "d41eefca073205c54103a4d432d113ae12dc438ad808c86cc00fee67e8837945",
     "bin": "parsecd.exe",
     "shortcuts": [
         [
