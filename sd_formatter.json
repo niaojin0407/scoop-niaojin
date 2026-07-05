@@ -26,8 +26,8 @@
     ],
     "checkver": {
         "url": "https://www.sdcard.org/downloads/formatter/",
-        "re": "<h2 class=\"fast\">SD Memory Card Formatter (?<ver>[\\d]+).(?<rev>[\\d]+.[\\d]+) for SD/SDHC/SDXC</h2>",
-        "replace": "${ver}.${rev}"
+        "regex": "SD Memory Card Formatter (?<matchVer>\\d+)\\.(?<rev>\\d+\\.\\d+) for SD/SDHC/SDXC(?:/SDUC)?",
+        "replace": "${matchVer}.${rev}"
     },
     "autoupdate": {
         "url": "https://www.sdcard.org/downloads/formatter/eula_windows/SDCardFormatterv$matchVer_WinEN.zip"
