@@ -1,10 +1,10 @@
 {
-    "version": "June-5-2026",
+    "version": "June-23-2026",
     "homepage": "https://parsec.app",
     "description": "Low-latency remote desktop (no hosting)",
     "license": "Freeware",
     "url": "https://builds.parsecgaming.com/package/parsec-flat-windows.zip",
-    "hash": "793f38870057b51f9675877aee98fd547ac0674ff2cfde66b1f30846193fd1a3",
+    "hash": "f3060956a2bca1347765443f6a4e8884a10e845b7bcfbf5bf53dee1eae2d7fee",
     "bin": "parsecd.exe",
     "shortcuts": [
         [
