@@ -11,7 +11,7 @@
         "[Edit]-->[Preferences]-->[Library]-->[FFmpeg Library](set location)"
     ],
     "checkver": {
-        "url": "http://192.168.11.100/lame.buanzo.org.html",
+        "url": "http://lame.buanzo.org/",
         "re": "https://lame.buanzo.org/ffmpeg-win-([\\d.]+).zip",
     },
     "autoupdate": {
