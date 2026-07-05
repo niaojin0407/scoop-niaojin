@@ -4,7 +4,7 @@
     "license": "GPL-2.0-only",
     "version": "1.17.0",
     "url": "https://downloads.sourceforge.net/project/doxygen/rel-1.17.0/doxygen-1.17.0.windows.x64.bin.zip",
-    "hash": "",
+    "hash": "94594407C4CBCA3049D76AACBB05D4A6F7D0F4E93C0DE410B825D25CA5621C83",
     "bin": [
         "bin\\doxygen.exe",
         "bin\\doxyindexer.exe",
