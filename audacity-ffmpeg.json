@@ -12,7 +12,7 @@
     ],
     "checkver": {
         "url": "http://lame.buanzo.org/",
-        "re": "https://lame.buanzo.org/ffmpeg-win-([\\d.]+).zip",
+        "re": "https://lame.buanzo.org/ffmpeg-win-([\\d.]+).zip"
     },
     "autoupdate": {
         "url": "https://lame.buanzo.org/ffmpeg-win-$version.zip"
